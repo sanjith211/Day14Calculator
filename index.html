@@ -11,6 +11,7 @@
 
 <body>
     <h1 id="title">Calculator</h1>
+    <p id="description">Online Calculator</p>
     <div class="container">
         <div class="row">
             <div class="col">
@@ -18,39 +19,39 @@
                 <div class="contain">
                     <div class="btn-group">
                         <button class="btn btn-primary-clear" id="clear" onclick="clearDisplay()">C</button>
-                        <button class="btn btn-primary" onclick="removeLastValue('<-')"> <- </button>
-                                <button class="btn btn-operator" onclick="appendToDisplay('.')">.</button>
-                                <button class="btn btn-operator" onclick="appendToDisplay('*')">x</button>
+                        <button class="btn btn-primary" id="remove" onclick="removeLastValue('<-')"> <- </button>
+                                <button class="btn btn-operator" id="." onclick="appendToDisplay('.')">.</button>
+                                <button class="btn btn-operator" id="*" onclick="appendToDisplay('*')">x</button>
                     </div>
                 </div>
                 <div class="contain">
                     <div class="btn-group">
-                        <button class="btn btn-primary" onclick="appendToDisplay('7')">7</button>
-                        <button class="btn btn-primary" onclick="appendToDisplay('8')">8</button>
-                        <button class="btn btn-primary" onclick="appendToDisplay('9')">9</button>
-                        <button class="btn btn-operator" onclick="appendToDisplay('/')">/</button>
+                        <button class="btn btn-primary" id="7" onclick="appendToDisplay('7')">7</button>
+                        <button class="btn btn-primary" id="8" onclick="appendToDisplay('8')">8</button>
+                        <button class="btn btn-primary" id="9" onclick="appendToDisplay('9')">9</button>
+                        <button class="btn btn-operator" id="/" onclick="appendToDisplay('/')">/</button>
                     </div>
                 </div>
                 <div class="contain">
                     <div class="btn-group">
-                        <button class="btn btn-primary" onclick="appendToDisplay('4')">4</button>
-                        <button class="btn btn-primary" onclick="appendToDisplay('5')">5</button>
-                        <button class="btn btn-primary" onclick="appendToDisplay('6')">6</button>
+                        <button class="btn btn-primary" id="4" onclick="appendToDisplay('4')">4</button>
+                        <button class="btn btn-primary" id="5" onclick="appendToDisplay('5')">5</button>
+                        <button class="btn btn-primary" id="6" onclick="appendToDisplay('6')">6</button>
                         <button class="btn btn-operator" id="subtract" onclick="appendToDisplay('-')">-</button>
                     </div>
                 </div>
                 <div class="contain">
                     <div class="btn-group">
-                        <button class="btn btn-primary" onclick="appendToDisplay('1')">1</button>
-                        <button class="btn btn-primary" onclick="appendToDisplay('2')">2</button>
-                        <button class="btn btn-primary" onclick="appendToDisplay('3')">3</button>
+                        <button class="btn btn-primary" id="1" onclick="appendToDisplay('1')">1</button>
+                        <button class="btn btn-primary" id="2" onclick="appendToDisplay('2')">2</button>
+                        <button class="btn btn-primary" id="3" onclick="appendToDisplay('3')">3</button>
                         <button class="btn btn-operator" id="add" onclick="appendToDisplay('+')">+</button>
                     </div>
                 </div>
                 <div class="contain">
                     <div class="btn-group">
-                        <button class="btn btn-primary" onclick="appendToDisplay('0')">0</button>
-                        <button class="btn btn-primary" onclick="appendToDisplay('00')">00</button>
+                        <button class="btn btn-primary" id="0" onclick="appendToDisplay('0')">0</button>
+                        <button class="btn btn-primary" id="00" onclick="appendToDisplay('00')">00</button>
                         <button class="btn btn-operator-primary" id="equal" onclick="calculate('=')">=</button>
                     </div>
                 </div>
